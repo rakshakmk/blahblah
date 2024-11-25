@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>calc</title>
+    </head>
+    <script>
+        function ADD(){
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=parseInt(a)+parseInt(b)
+            document.getElementById("t3").value=c;
+        };
+        function SUB(){
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            var c=a-b
+            document.getElementById("t3").value=c;
+        };
+    </script>
+    <body>
+        <form>
+enter the first no:<input type="text" id="t1"/>
+enter the seconmd no:<input type="text" id="t2"/>
+<input type="button" value="add" onclick='ADD()'/>
+<input type="button" value="sub" onclick='SUB()'/>
+RESULT:<input type="text" id="t3"/>
+
+        </form>
+    </body>
+</html>
